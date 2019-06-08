@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>FCC: Technical Documentation Page</title>
+  
+  
+  
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+
+  <nav id="navbar">
+  <header>Java Documentation</header>
+  <ul>
+    <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+    <li>
+      <a class="nav-link" href="#What_you_should_already_know"
+        >What you should already know</a
+      >
+    </li>
+    <li>
+      <a class="nav-link" href="#Java_and_JavaScript">Java and JavaScript </a>
+    </li>
+    <li><a class="nav-link" href="#Hello_world">Hello world</a></li>
+    <li><a class="nav-link" href="#Variables">Variables</a></li>
+    <li>
+      <a class="nav-link" href="#Declaring_variables">Declaring variables</a>
+    </li>
+    <li><a class="nav-link" href="#Variable_scope">Variable scope</a></li>
+    <li><a class="nav-link" href="#Global_variables">Global variables</a></li>
+    <li><a class="nav-link" href="#Arrays">Arrays </a> </li>
+    <li><a class="nav-link" href="#Data_types">Data types</a></li>
+    <li>
+      <a class="nav-link" href="#if...else_statement">if...else statement</a>
+    </li>
+    
+    <li><a class="nav-link" href="#while_statement">while statement</a></li>
+    <li>
+      <a class="nav-link" href="#Function_declarations"
+        >Function declarations</a
+      >
+    </li>
+    
+    <li>
+      <a class="nav-link" href="#Collections_Framework"
+        >Collections Framework</a
+      >
+    </li>
+    
+    <li><a class="nav-link" href="#Reference">Reference</a></li>
+  </ul>
+</nav>
+<main id="main-doc">
+  <section class="main-section" id="Introduction">
+    <header>Introduction</header>
+    <article>
+      <p>
+        Java is a cross-platform, object-oriented programming language. Java was developed by James Goshling at Sun Microsystems. Earlier it was called as Oak and renamed as "Java" (After a famous coffee). Later, Oracle took over Java and now it releases updates for it. A Java Virtual Machine(JVM) is necessary to run java. Java is currently the most widely used language in the industry.
+      </p>
+
+      <p>
+        Java contains a standard library of Classes. Core Java can be extended for a variety of applications. for
+        example:
+      </p>
+      <ul>
+        <li>
+          Java can be used to create client side applications and can be used to implement business logic. The AWT and Swing can be used to create User Interfaces.
+        </li>
+        <li>
+          Java can also be used at server side in the form of Servlets, JSP to create dynamic web pages. Java frameworks like Struts, Hibernates, Spring are widely used to create applications.
+        </li>
+      </ul>
+    </article>
+  </section>
+  <section class="main-section" id="What_you_should_already_know">
+    <header>What you should already know</header>
+    <article>
+      <p>This guide assumes you have the following basic background:</p>
+
+      <ul>
+        <li>
+          A general understanding of Object Oriented Programming Paradigms.
+        </li>
+        <li>Basic knowledge of C++ is preferred</li>
+        <li>
+          Some programming experience. If you are new to programming, try one of
+          the tutorials linked on the main page about Java
+        </li>
+      </ul>
+    </article>
+  </section>
+  <section class="main-section" id="Java_and_JavaScript">
+    <header>Java and JavaScript</header>
+    <article>
+      <p>
+        Java and JavaScript are similar in some ways but fundamentally different
+        in some others. The JavaScript language resembles Java but does not have
+        Java's static typing and strong type checking. JavaScript follows most
+        Java expression syntax, naming conventions and basic control-flow.  
+      </p>
+      <p>
+        JavaScript is a very free-form language compared to Java. You do not
+        have to declare all variables, classes, and methods. You do not have to
+        be concerned with whether methods are public, private, or protected, and
+        you do not have to implement interfaces. Variables, parameters, and
+        function return types are not explicitly typed.
+      </p>
+    </article>
+  </section>
+  <section class="main-section" id="Hello_world">
+    <header>Hello world</header>
+    <article>
+      To get started with writing Java, open the Scratchpad and write your
+      first "Hello world" Java code:
+      <code
+        >public static void main(String args[]) { System.out.println("Hello World !"); }
+        
+      </code>
+
+      Use following steps to run the code:
+      <ul>
+        <li> Save the code as demo.java file. </li>
+        <li> Open terminal and run the command 
+             $javac demo.java
+          $java demo   </li>
+      </ul>
+      <p> It is assumed that you have installed Java Develpment Kit(JDK) on your machine. If not, you can refer the link given below to install JDK.
+      </p>
+       <a href= "https://www.java.com/">Installing JDK</a>
+    </article>
+  </section>
+  <section class="main-section" id="Variables">
+    <header>Variables</header>
+    <p>
+      You use variables as symbolic names for values in your program. The
+      names of variables, called identifiers, conform to certain rules.
+    </p>
+    <p>
+      A Java identifier must start with a letter. Subsequent characters can also be digits (0-9), underscore(_). Because
+      Java is case sensitive, letters include the characters "A" through
+      "Z" (uppercase) and the characters "a" through "z" (lowercase).
+    </p>
+    <p>
+      The variables in Java must have Data Types. String is the default datatype in Java. Java supports various datatypes like Integer, Double, Float, Boolean, Character, String, Long, Short.
+      Class is auser defined Datatype in Java.
+      Object is a variable whose datatype is class.
+    </p>
+    <p>
+      
+     Some examples of legal names are Number_hits, temp99.
+    </p>
+  </section>
+  <section class="main-section" id="Declaring_variables">
+    <header>Declaring variables</header>
+    <article>
+      Following is the syntax to declare variable:
+      <p>
+        Datatype variable_name;. For example, <code>int x;.</code> This syntax
+        can be used to declare both local and global variables.
+      </p>
+      <p>
+        We can assign a value to variable at time of declaration as well. For example, <code>int x = 42.</code> 
+      </p>
+      
+    </article>
+  </section>
+  <section class="main-section" id="Variable_scope">
+    <header>Variable scope</header>
+    <article>
+      <p>
+        When you declare a variable outside of any function, it is called a
+        global variable, because it is available to any other code in the
+        current document. When you declare a variable within a function, it is
+        called a local variable, because it is available only within that
+        function.
+      </p>
+    </article>
+  </section>
+  <section class="main-section" id="Global_variables">
+    <header>Global variables</header>
+    <article>
+      <p>
+        Global variables are in fact properties of the global object. In java Global variables can be used anywhere in the program.
+      </p>
+    </article>
+  </section>
+  <section class="main-section" id="Arrays">
+    <header>Arrays</header>
+    <article>
+      <p>
+        An array is a data structure which is used to hold data of similar type. Arrays in java are similar to that of C++. The syntax for declaring array is:
+      </p>
+
+      <code>int myarray[] = new int[10]</code>
+      <p>
+       This creates an array of integer type whose size is 10. Similarly we can create arrays of all datatypes supported by java.
+      </p>
+    </article>
+  </section>
+  <section class="main-section" id="Data_types">
+    <header>Data types</header>
+    <article>
+      <p>Following are the Datatypes in Java:</p>
+      <ul>
+        <li> String - A sequence of characters enclosed in ""</li>
+        <li> Integer - Digits </li>
+        <li> Double - Floating point high precision </li>
+        <li> Float - Floating point number </li>
+        <li> Character - A single letter enclosed in '' </li>
+        <li> Boolean - True or False <li>
+        <li> Long - Integer having large capacity </li>
+        <li> Short - Integer with less capacity </li>
+         
+    </article>
+  </section>
+  <section class="main-section" id="if...else_statement">
+    <header>if...else statement</header>
+    <article>
+      Use the if statement to execute a statement if a logical condition is
+      true. Use the optional else clause to execute a statement if the condition
+      is false. An if statement looks as follows:
+
+      <code>if (condition) { statement_1; } else { statement_2; }</code>
+      condition can be any expression that evaluates to true or false. See
+      Boolean for an explanation of what evaluates to true and false. If
+      condition evaluates to true, statement_1 is executed; otherwise,
+      statement_2 is executed. statement_1 and statement_2 can be any statement,
+      including further nested if statements.
+      <p>
+        You may also compound the statements using else if to have multiple
+        conditions tested in sequence, as follows:
+      </p>
+      <code
+        >if (condition_1) { statement_1; } else if (condition_2) { statement_2;
+        } else if (condition_n) { statement_n; } else { statement_last; }
+      </code>
+      In the case of multiple conditions only the first logical condition which
+      evaluates to true will be executed. To execute multiple statements, group
+      them within a block statement ({ ... }) . In general, it's good practice
+      to always use block statements, especially when nesting if statements:
+
+      <code
+        >if (condition) { statement_1_runs_if_condition_is_true;
+        statement_2_runs_if_condition_is_true; } else {
+        statement_3_runs_if_condition_is_false;
+        statement_4_runs_if_condition_is_false; }</code
+      >
+      It is advisable to not use simple assignments in a conditional expression,
+      because the assignment can be confused with equality when glancing over
+      the code. For example, do not use the following code:
+      <code>if (x = y) { /* statements here */ }</code> If you need to use an
+      assignment in a conditional expression, a common practice is to put
+      additional parentheses around the assignment. For example:
+
+      <code>if ((x = y)) { /* statements here */ }</code>
+    </article>
+  </section>
+  <section class="main-section" id="while_statement">
+    <header>while statement</header>
+    <article>
+      A while statement executes its statements as long as a specified condition
+      evaluates to true. A while statement looks as follows:
+
+      <code>while (condition) statement</code> If the condition becomes false,
+      statement within the loop stops executing and control passes to the
+      statement following the loop.
+
+      <p>
+        The condition test occurs before statement in the loop is executed. If
+        the condition returns true, statement is executed and the condition is
+        tested again. If the condition returns false, execution stops and
+        control is passed to the statement following while.
+      </p>
+
+      <p>
+        To execute multiple statements, use a block statement ({ ... }) to group
+        those statements.
+      </p>
+
+      Example:
+
+      <p>The following while loop iterates as long as n is less than three:</p>
+
+      <code>var n = 0; var x = 0; while (n &lt; 3) { n++; x += n; }</code>
+      <p>
+        With each iteration, the loop increments n and adds that value to x.
+        Therefore, x and n take on the following values:
+      </p>
+
+      <ul>
+        <li>After the first pass: n = 1 and x = 1</li>
+        <li>After the second pass: n = 2 and x = 3</li>
+        <li>After the third pass: n = 3 and x = 6</li>
+      </ul>
+      <p>
+        After completing the third pass, the condition n &lt; 3 is no longer
+        true, so the loop terminates.
+      </p>
+    </article>
+  </section>
+  <section class="main-section" id="Function_declarations">
+    <header>Function declarations</header>
+    <article>
+      A function definition (also called a function declaration, or function
+      statement) consists of the return type, followed by:
+
+      <ul>
+        <li>The name of the function.</li>
+        <li>
+          A list of arguments to the function, enclosed in parentheses and
+          separated by commas.
+        </li>
+        <li>
+          The Java statements that define the function, enclosed in curly
+          brackets, { }.
+        </li>
+      </ul>
+      <p>
+        For example, the following code defines a simple function named square:
+      </p>
+
+      <code>void square(int number) { return number * number; }</code>
+      <p>
+        The function square takes one argument, called number. The function
+        consists of one statement that says to return the argument of the
+        function (that is, number) multiplied by itself. The return statement
+        specifies the value returned by the function.
+      </p>
+      <code>return number * number;</code>
+      <p>
+        Primitive parameters (such as a number) are passed to functions by
+        value; the value is passed to the function, but if the function changes
+        the value of the parameter, this change is not reflected globally or in
+        the calling function.
+      </p>
+    </article>
+  </section>
+    
+    <section class="main-section" id="Collections_Framework">
+    <header>Collections Framework</header>
+    <article>
+      <p> 
+        Java supports a variety of data structures which are present in the form of built in classes. These classes are called as the Collections Framework. They include data structures like Link List, Vector, HashMap, Tree, etc. To explore more about the Collections Framework, click on the link given below.
+        <a href = "https://docs.oracle.com/javase/8/docs/technotes/guides/collections/index.html" target = "_blank"> Collections Framework </a>
+      </p>
+      </article>
+    </section>
+    
+  <section class="main-section" id="Reference">
+    <header>Reference</header>
+    <article>
+      <ul>
+        <li>
+          All the documentation in this page is taken from
+          <a
+            href="https://www.w3schools.com/java/java_intro.asp
+"
+            target="_blank"
+            >Java Docs</a
+          >
+        </li>
+      </ul>
+    </article>
+  </section>
+</main>
+  <script src='https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js'></script>
+
+  
+
+    <script  src="js/index.js"></script>
+
+
+
+
+</body>
+
+</html>
